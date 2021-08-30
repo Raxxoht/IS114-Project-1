@@ -31,17 +31,6 @@ a:visited{
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
-#james {
-    background-color: blueviolet;
-}
-.sect {
-    height:1000px;
-    width:100vw;
-    margin-top:-20px;
-}
-#tamara {
-    background-color: rgb(41, 98, 255);
-}
 .innhold {
     margin-left:30vw;
     height:300px;
