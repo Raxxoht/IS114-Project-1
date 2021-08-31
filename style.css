@@ -17,7 +17,7 @@ html {
 a {
     display:block;
     color:cyan;
-    transition: all 0.1s ease-in;
+    transition: all 0.2s ease-in-out;
     margin-bottom:5px;
     margin-top:5px;
     padding:10px;
@@ -49,10 +49,10 @@ a:visited{
 }
 a:hover {
     background-color: rgba(0, 0, 0, 0.25);
-    font-size: 20px;
+    animation:hovera 2.5s infinite;
+    font-size:20px;
 }
 #hjem {
-    padding-top: 20px;
     background: linear-gradient(180deg, rgba(63,94,251,1) 0%, rgba(251,0,51,1) 100%);
 }
 #einar {
@@ -84,4 +84,9 @@ a:hover {
 .section {
     height: 700px;
     width:100vw;
+    padding-top:20px;
+}
+@keyframes hovera {
+    0%, 100% {color:cyan;}
+    50%{color:red;}
 }
