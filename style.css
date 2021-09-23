@@ -1,0 +1,39 @@
+.visitkort{
+    width: 250px;
+    background: rgba(1,1,1,0.7) ;
+    border-radius: 100px;
+    padding: 40px;
+    text-align: center;
+    margin: 20% auto auto 15%;
+    float: left;
+    color: red;
+    font-family: Verdana, serif;
+}
+.roll{
+    width: 250px;
+    background: rgba(1,1,1,0.7) ;
+    border-radius: 100px;
+    padding: 40px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20%;
+    float: left;
+    color: red;
+    font-family: Verdana, serif;
+    position: center;
+}
+.report{
+    width: 250px;
+    background: rgba(1,1,1,0.7) ;
+    border-radius: 100px;
+    padding: 40px;
+    text-align: center;
+    margin:20% 0% auto auto;
+    float: left;
+    color: red;
+    font-family: Verdana, serif;
+    position: relative;
+}
+body{
+    background-color: aqua;
+}
