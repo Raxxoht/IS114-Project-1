@@ -13,5 +13,19 @@
         <a href="./how-we-roll.html">How We Roll</a>
         <a href="./hwr-report.html">HWR-Rapport</a>
     </div>
+    <div id="innhold">
+        <form action="./hwr-report.html" method="POST">
+            <label for="navninput">Navn</label>
+            <input id="navninput" placeholder="Skriv inn ditt navn" type="text">
+            
+            <br>
+
+            <label for="jobbinginput">alene</label>
+            <input min="1" max="10" value="5" type="range" name="jobbing" id="jobbinginput">
+            <label for="jobbinginput">i gruppe</label>
+            <h4>Nåværende verdi:</h4><output for="jobbinginput" id="verdiboksid"></output>
+        </form>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
