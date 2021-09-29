@@ -7,26 +7,80 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://www.clipartmax.com/png/middle/322-3225702_happy-potato.png" type="image/png">
+
+<style>
+
+</style>
+
 </head>
 <body>
+
     <div class="nav">
         <a href="./index.html">Home</a>
         <a href="./how-we-roll.html">How We Roll</a>
         <a href="./hwr-report.html">HWR-Rapport</a>
     </div>
     <div id="innhold">
+
+        
         <form action="./hwr-report.html" method="POST">
+
+            <p>Hva er navnet ditt?</p>
             <label for="navninput">Navn</label>
             <input id="navninput" placeholder="Skriv inn ditt navn" type="text">
             
             <br>
-
+            <!--Jobbe i gruppe eller -->
+            <p>Hvordan liker du å jobbe?</p>
             <label for="jobbinginput">alene</label>
             <input min="1" max="10" value="5" type="range" name="jobbing" id="jobbinginput">
             <label for="jobbinginput">i gruppe</label>
             <h4>Nåværende verdi:</h4><output for="jobbinginput" id="verdiboksid"></output>
+
+            <p>Er du A eller B menneske?</p>
+            <!-- dorn - day or night -->
+             <label for="dorn">Morgenfugl</label>
+             <input type="range" id="dorn" name="dorn" value="50">
+             <label for="dorn">Nattugle</label>
+
+
+             <p>Lærer du best ved digital eller fysisk oppmøte?</p>
+             <label for="dielfy">Fysisk</label>
+             <input type="range" id="dielfy" min="1" max="10" value="5">
+             <label for="dielfy">Digiltalt</label>
+
+             <label for=""></label>
+             <input type="range">
+             <label for=""></label>
+
+             <label for=""></label>
+             <input type="range">
+             <label for=""></label>
+
+
+
+            
+            <!-- 
+Forslag til spørsmål: 
+
+Liker å ta avgjørdelser Ja - Nei 
+
+Lærer best Alene - i gruppe
+
+Liker best å jobbe Hjemme - utenfor hjemmet
+
+Liker best skriftlig kommunikasjon - Tale kommunikasjon 
+
+Holder hode kaldt under press Ja - nei 
+
+Er du Introvert - Extrovert -->
+
+
+
         </form>
     </div>
     <script src="./script.js"></script>
+
+
 </body>
 </html>
