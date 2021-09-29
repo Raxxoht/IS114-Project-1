@@ -33,21 +33,23 @@
             <!--Jobbe i gruppe eller -->
             <p>Hvordan liker du å jobbe?</p>
             <label for="jobbinginput">alene</label>
-            <input min="1" max="10" value="5" type="range" name="jobbing" id="jobbinginput">
+            <input min="1" max="10" class="slider" data-value="0" value="5" type="range" name="jobbing" id="jobbinginput">
             <label for="jobbinginput">i gruppe</label>
-            <h4>Nåværende verdi:</h4><output for="jobbinginput" id="verdiboksid"></output>
+            <h4 class="viv" id="verdiboksid">Nåværende verdi:</h4>
 
             <p>Er du A eller B menneske?</p>
             <!-- dorn - day or night -->
              <label for="dorn">Morgenfugl</label>
-             <input type="range" id="dorn" name="dorn" value="50">
+             <input type="range" id="dorn" class="slider" data-value="1" min="1" max="10" name="dorn" value="5">
              <label for="dorn">Nattugle</label>
+             <h4 class="viv">Nåværende verdi:</h4>
 
 
              <p>Lærer du best ved digital eller fysisk oppmøte?</p>
              <label for="dielfy">Fysisk</label>
-             <input type="range" id="dielfy" min="1" max="10" value="5">
+             <input type="range" class="slider" data-value="2" id="dielfy" min="1" max="10" value="5">
              <label for="dielfy">Digiltalt</label>
+             <h4 class="viv">Nåværende verdi:</h4>
 
              <label for=""></label>
              <input type="range">
