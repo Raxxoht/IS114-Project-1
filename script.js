@@ -1,8 +1,8 @@
-let slider1 = document.getElementById("jobbinginput");
-let verdiboks = document.getElementById("verdiboksid");
-let verdi1;
+let sliders = document.getElementsByClassName("slider");
+let verdi = document.getElementsByClassName("viv");
 
-verdiboks.innerHTML = slider1.value;
-slider1.oninput = function () {
-    verdiboks.innerHTML = this.value;
+for(i=0;i!=sliders.length;i++){
+    sliders[i].oninput = function () {
+        verdi[Number(this.getAttribute('data-value'))].innerHTML = this.value;
+    }
 }
