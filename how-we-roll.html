@@ -1,15 +1,17 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>How We Roll</title>
     <link rel="icon" href="https://www.clipartmax.com/png/middle/322-3225702_happy-potato.png" type="image/png">
 
 <style>
+
+#innhold {
+    font-family: helvetica;
+}
 
 </style>
 
@@ -31,97 +33,11 @@
             <input id="navninput" placeholder="Skriv inn ditt navn" type="text">
             
             <br>
-            <!--Jobbe i gruppe eller -->
+            <!--gela = gruppe eller alene -->
             <p>Hvordan liker du å jobbe?</p>
-            <label for="jobbinginput">alene</label>
-            <input min="1" max="10" value="5" type="range" name="jobbing" id="jobbinginput">
-            <label for="jobbinginput">i gruppe</label>
-            <h4>Nåværende verdi:</h4><output for="jobbinginput" id="verdiboksid"></output>
-
-            <p>Er du A eller B menneske?</p>
-            <!-- dorn - day or night -->
-             <label for="dorn">Morgenfugl</label>
-             <input type="range" id="dorn" name="dorn" value="50">
-             <label for="dorn">Nattugle</label>
-
-
-             <p>Lærer du best ved digital eller fysisk oppmøte?</p>
-             <label for="dielfy">Fysisk</label>
-             <input type="range" id="dielfy" min="1" max="10" value="5">
-             <label for="dielfy">Digiltalt</label>
-
-             <label for=""></label>
-             <input type="range">
-             <label for=""></label>
-
-             <label for=""></label>
-             <input type="range">
-             <label for=""></label>
-
-
-
-            
-            <!-- 
-Forslag til spørsmål: 
-
-Liker å ta avgjørdelser Ja - Nei 
-
-Lærer best Alene - i gruppe
-
-Liker best å jobbe Hjemme - utenfor hjemmet
-
-Liker best skriftlig kommunikasjon - Tale kommunikasjon 
-
-Holder hode kaldt under press Ja - nei 
-
-Er du Introvert - Extrovert -->
-
-
-
-        </form>
-    </div>
-    <script src="./script.js"></script>
-
-
-</body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://www.clipartmax.com/png/middle/322-3225702_happy-potato.png" type="image/png">
-
-<style>
-
-</style>
-
-</head>
-<body>
-
-    <div class="nav">
-        <a href="./index.html">Home</a>
-        <a href="./how-we-roll.html">How We Roll</a>
-        <a href="./hwr-report.html">HWR-Rapport</a>
-    </div>
-    <div id="innhold">
-
-        
-        <form action="./hwr-report.html" method="POST">
-
-            <p>Hva er navnet ditt?</p>
-            <label for="navninput">Navn</label>
-            <input id="navninput" placeholder="Skriv inn ditt navn" type="text">
-            
-            <br>
-            <!--Jobbe i gruppe eller -->
-            <p>Hvordan liker du å jobbe?</p>
-            <label for="jobbinginput">alene</label>
-            <input min="1" max="10" class="slider" data-value="0" value="5" type="range" name="jobbing" id="jobbinginput">
-            <label for="jobbinginput">i gruppe</label>
+            <label for="gela">alene</label>
+            <input min="1" max="10" class="slider" data-value="0" value="5" type="range" name="jobbing" id="gela">
+            <label for="gela">i gruppe</label>
             <h4 class="viv" id="verdiboksid">Nåværende verdi:</h4>
 
             <p>Er du A eller B menneske?</p>
@@ -131,38 +47,39 @@ Er du Introvert - Extrovert -->
              <label for="dorn">Nattugle</label>
              <h4 class="viv">Nåværende verdi:</h4>
 
-
+            <!-- dielfy = digitalt eller fyskisk -->
              <p>Lærer du best ved digital eller fysisk oppmøte?</p>
              <label for="dielfy">Fysisk</label>
              <input type="range" class="slider" data-value="2" id="dielfy" min="1" max="10" value="5">
              <label for="dielfy">Digiltalt</label>
              <h4 class="viv">Nåværende verdi:</h4>
 
-             <label for=""></label>
-             <input type="range">
-             <label for=""></label>
-
-             <label for=""></label>
-             <input type="range">
-             <label for=""></label>
-
-
+             
+             <!-- telp = teoretisk eller praktisk -->
+             <p>Lærer du best med teoretisk eller praktisk arbeid?</p>
+             <label for="telp">Teoretisk</label>
+             <input type="range" class="slider" data-value="3" id="telp" min="1" max="10" value="5">
+             <label for="telp">Praktisk</label>
+            
+             <!-- belf = bestemme eller følge -->
+             <p>Liker du å være den som bestemmer eller den som følger etter?</p>
+             <label for="belf">Bestemme</label>
+             <input type="range" class="slider" data-value="3" id="belf" min="1" max="10" value="5">
+             <label for="belf">Følge</label>
+             
+             <!-- sn = stress nei / sj stress ja -->
+             <p>Liker du å jobbe under stress?</p>
+             <input type="radio" id="sj">
+             <label for="sj">Ja</label>
+             <input type="radio" id="sn">
+             <label for="sn">Nei</label>
 
             
             <!-- 
 Forslag til spørsmål: 
 
 Liker å ta avgjørdelser Ja - Nei 
-
-Lærer best Alene - i gruppe
-
-Liker best å jobbe Hjemme - utenfor hjemmet
-
-Liker best skriftlig kommunikasjon - Tale kommunikasjon 
-
-Holder hode kaldt under press Ja - nei 
-
-Er du Introvert - Extrovert -->
+Holder hode kaldt under press Ja - nei  -->
 
 
 
@@ -172,5 +89,4 @@ Er du Introvert - Extrovert -->
 
 
 </body>
->>>>>>> 1cbcfe053b79f54ddbbe2b96efe8d70be61af2e0
 </html>

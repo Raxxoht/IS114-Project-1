@@ -15,7 +15,16 @@
         <a href="./hwr-report.html">HWR-Rapport</a>
     </div>
 
+    <canvas id="rapCanvas">
+
+
+    </canvas>
+
     <script>
+
+        var canvas = document.getElementById(rapCanvas);
+        var ctx = canvas.getContext("2d");
+
 
         fetch('https://bacit.info/hwr/20210926134925-47352fbdecddd9a754001f4e4abbf40f.json')
         .then(response => response.json())
