@@ -18,23 +18,39 @@ html {
 }
 
 .form{
-    border: 5px solid black;
+    border: 3px solid black;
     margin-top: 50px;
     margin-left: 40px;
     padding-left: 50px;
     padding-bottom: 30px;
+    width: 40vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 a {
     margin-right:30px;
-    background-color: white;
     padding:10px;
+    text-decoration: none;
+    color: #d9d9d9;
+    font-family: Helvetica;
+    font-weight: bold;
+    background: none;
 }
+
+a:hover {
+  color: rgb(255, 102, 0);
+}
+
+.active{
+    color:rgb(255, 102, 0);
+}
+
 .nav { 
     overflow: hidden;
-    background-color: aqua;
+    background: linear-gradient(90deg, rgba(28,28,28,1) 0%, rgba(82,82,82,1) 100%);
     padding: 20px;
     position:sticky;
-    width:100vw;
+    border-radius: 30px;
 }
 </style>
 
@@ -43,7 +59,7 @@ a {
 
     <div class="nav">
         <a href="./index.html">Home</a>
-        <a href="./how-we-roll.html">How We Roll</a>
+        <a class="active" href="./how-we-roll.html">How We Roll</a>
         <a href="./hwr-report.html">HWR-Rapport</a>
     </div>
     <div id="innhold">

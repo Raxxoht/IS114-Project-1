@@ -7,12 +7,42 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="https://www.clipartmax.com/png/middle/322-3225702_happy-potato.png" type="image/png">
+<style>
+
+html {
+    font-family: Helvetica;
+}
+a {
+     margin-right:30px;
+    padding:10px;
+    text-decoration: none;
+    color: #d9d9d9;
+    font-family: Helvetica;
+    font-weight: bold;
+    background: none;
+}
+a:hover {
+    color: rgb(255, 102, 0);
+}
+        
+.active{
+    color:rgb(255, 102, 0);
+}
+.nav { 
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(28,28,28,1) 0%, rgba(82,82,82,1) 100%);
+    padding: 20px;
+    position:sticky;
+     border-radius: 30px;
+}
+</style>
+
 </head>
 <body>
     <div class="nav">
         <a href="./index.html">Home</a>
         <a href="./how-we-roll.html">How We Roll</a>
-        <a href="./hwr-report.html">HWR-Rapport</a>
+        <a class="active" href="./hwr-report.html">HWR-Rapport</a>
     </div>
 
     <canvas id="rapCanvas">
